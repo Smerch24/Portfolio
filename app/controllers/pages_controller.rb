@@ -1,6 +1,8 @@
 class PagesController < ApplicationController
+  @pages = Page.all
   def index
-    @page = Page.find(2)
+    @page = Page.find(1)
+    @pages = Page.all
   end
 
 
